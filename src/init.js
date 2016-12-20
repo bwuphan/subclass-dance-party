@@ -22,12 +22,26 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+
+    //var colorChangingDancer = new colorChangingDancerMakerFunction
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+
+  $(document).on('mouseover', ".dragon", function(event){
+    var randomNum = Math.random();
+    console.log(randomNum);
+    if(randomNum < .5){
+      $(this).animate({left: "+=200px"}, "slow");
+    }
+    if(randomNum >= .5){
+      $(this).animate({left: "-=200px"}, "slow");
+    }
   });
 });
 

@@ -24,4 +24,55 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  margin: 10px 10px 10px 10px;
+}
+.dragon{
+  color: #777;
+   background: url(dragon.gif) no-repeat;
+  width: 100px; /* Width of new image */
+  height: 200px; /* Height of new image */
+  padding-left: 85px; /* Equal to width of new image */
+  background-size: 200px;
+  border: none;
+  margin: 10px 10px 10px 10px;
+}
+
+.red{
+  border-color: red;
+}
+
+.orange{
+ border-color: orange;
+}
+
+.yellow{
+  border-color: yellow;
+}
+
+.green{
+  border-color: green;
+}
+
+.blue{
+  border-color: blue;
+}
+
+.indigo{
+  border-color: indigo;
+}
+
+.violet{
+  border-color: violet;
+}
+
+.white{
+  border-color: white;
+}
+
+.pink{
+  border-color: pink;
+}
+
+.black{
+  border-color: black;
 }
