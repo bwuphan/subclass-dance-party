@@ -36,11 +36,17 @@ $(document).ready(function() {
   $(document).on('mouseover', ".dragon", function(event){
     var randomNum = Math.random();
     console.log(randomNum);
-    if(randomNum < .5){
-      $(this).animate({left: "+=200px"}, "slow");
+    if(randomNum < 0.25){
+      $(this).animate({left: "+=100px"}, "slow");
     }
-    if(randomNum >= .5){
-      $(this).animate({left: "-=200px"}, "slow");
+    if(randomNum >= 0.25 && randomNum < 0.5){
+      $(this).animate({left: "-=100px"}, "slow");
+    }
+    if(randomNum >= 0.5 && randomNum < 0.75){
+      $(this).animate({top: "+=100px"}, "slow");
+    }
+    if(randomNum >= 0.75 && randomNum <= 1){
+      $(this).animate({top: "-=100px"}, "slow");
     }
   });
 });
