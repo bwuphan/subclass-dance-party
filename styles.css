@@ -26,7 +26,7 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
-  margin: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
 }
 .dragon{
   color: #777;
@@ -37,6 +37,42 @@ body, a:link, a:visited, a:active{
   background-size: 200px;
   border: none;
   margin: 10px 10px 10px 10px;
+}
+
+.dragonborn{
+   background: url(dova.png) no-repeat;
+  width: 100px; /* Width of new image */
+  height: 200px; /* Height of new image */
+  padding-left: 95px; /* Equal to width of new image */
+  background-size: 100px;
+  border: none;
+}
+.fire{
+  background: url(fire.gif) no-repeat;
+  width: 100px; /* Width of new image */
+  height: 200px; /* Height of new image */
+  padding-left: 95px; /* Equal to width of new image */
+  background-size: 100px;
+  border: none;
+}
+
+.shout{
+  background: url(Shout.png) no-repeat;
+  width: 100px; /* Width of new image */
+  height: 200px; /* Height of new image */
+  padding-left: 95px; /* Equal to width of new image */
+  padding-top:75px;
+  background-size: 100px;
+  border: none;
+  transform: translate3d(200px, 200px, 0px);
+}
+
+.right{
+    transform: rotate(3deg);
+}
+
+.left{
+    transform: rotate(-3deg);
 }
 
 .red{
@@ -78,3 +114,4 @@ body, a:link, a:visited, a:active{
 .black{
   border-color: black;
 }
+
